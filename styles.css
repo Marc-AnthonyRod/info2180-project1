@@ -2,10 +2,204 @@
 body {
     margin: 0;
     font-size: 16px;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+        "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    padding: 20px;
+}
+
+header {
+    background: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 18px;
+}
+
+header a:hover {
+    color: #5A67D8;
+}
+
+/* ===========================
+   HERO OVERVIEW
+=========================== */
+.overview-hero {
+    background: #E2E8F0;
+    padding: 40px 0;
+}
+
+.overview-hero .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.overview-hero-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+/* ===========================
+   LEARN ABOUT SECTION
+=========================== */
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body h3 {
+    font-size: 21px;
+    color: #48BB78;
+}
+
+/* ===========================
+   COVID TESTING SECTION
+=========================== */
+.testing {
+    background: #4A5568;
+    color: white;
+    padding: 40px 0;
+}
+
+.testing .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testing .btn {
+    background: #48BB78;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+/* ===========================
+   RECENT STORIES
+=========================== */
+.stories h2 {
+    color: #5A67D8;
+}
+
+.stories article {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.stories img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.stories h3 {
+    font-size: 18px;
+}
+
+.stories a {
+    color: #5A67D8;
+    text-decoration: none;
+}
+
+.stories a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   NEWSLETTER
+=========================== */
+.newsletter {
+    background: #48BB78;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 260px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter .btn {
+    background: #5A67D8;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background: #4A5568;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ===========================
+   SPACING BETWEEN SECTIONS
+=========================== */
+section {
+    margin-bottom: 50px;
 }
